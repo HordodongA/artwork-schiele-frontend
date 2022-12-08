@@ -29,9 +29,12 @@ const ImageGrid = ({ searchVal, isMyGallery }) => {
 
   useEffect(() => {
     setImages([])
-    setPage(1)
     loadData()
   }, [searchVal, page])
+
+  useEffect(() => {
+    setPage(1)
+  }, [searchVal])
 
   // Grid page handler
   const onPageChange = (newPage) => {
