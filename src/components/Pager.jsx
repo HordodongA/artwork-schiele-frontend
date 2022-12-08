@@ -20,7 +20,6 @@ const Pager = ({ page, totalPageCount, onPageChange }) => {
       </button>
     </div>
   )
-
 }
 
 export default Pager

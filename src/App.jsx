@@ -38,11 +38,6 @@ function App() {
   const [isCollections, setIsCollections] = useState(false)
   const [isMyGallery, setIsMyGallery] = useState(false)  // ! *****
 
-
-
-
-
-
 // const loadUsersData = async () => {
 //   const accessToken = localStorage.getItem("accessToken")
 //   console.log(accessToken)
@@ -58,11 +53,9 @@ function App() {
 //   console.log(responseObject)
 // }
 
-
 // useEffect ( () => {
 //   loadUsersData()
 // }, [isLoggedIn])
-
 
 
   // ! UTIL FUNCTIONS
@@ -116,7 +109,6 @@ function App() {
       <main>
         <div id="background">
           <div id="mainframe">
-
             {isHome &&
               <>
                 <LandingPage />

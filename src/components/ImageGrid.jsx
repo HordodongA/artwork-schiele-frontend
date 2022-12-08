@@ -11,8 +11,7 @@ const ImageGrid = ({ searchVal, isMyGallery }) => {
   // App state
   const [images, setImages] = useState([])
   // User images from DB
-  const [userImages, setUserImages] = useState([]) // initben lehetne az összes képe 9-esével megjelenítve
-
+  // const [userImages, setUserImages] = useState([]) // initben lehetne az összes képe 9-esével megjelenítve
   // ImageDetails - Single Image Card state
   const [selectedImageId, setSelectedImageId] = useState(null)
   //Edit image
@@ -39,10 +38,9 @@ const ImageGrid = ({ searchVal, isMyGallery }) => {
     setPage(newPage)
   }
 
-
   // Download handler
   const downloadImage = (imgId) => {
-    console.log(imgId)
+    // console.log(imgId)
     saveAs(`https://www.artic.edu/iiif/2/${imgId}/full/843,/0/default.jpg`, `${imgId}.jpg`)
   }
 

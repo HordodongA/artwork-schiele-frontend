@@ -9,7 +9,7 @@ const UserArea = ({ uploadEndpoint }) => {
     const [uploadTitleInput, setUploadTitleInput] = useState("")
     const [uploadDescriptionInput, setUploadDescriptionInput] = useState("")
     const [uploadFileInputValue, setUploadFileInputValue] = useState("")
-    const [uploadServerMessage, setUploadServerMessage] = useState("Upload response here")
+    const [uploadServerMessage, setUploadServerMessage] = useState("")
     const [uploadSelectedFile, setUploadSelectedFile] = useState({})
     // User Search input states
     const [userSearchVal, setUserSearchVal] = useState("")
@@ -98,7 +98,6 @@ const UserArea = ({ uploadEndpoint }) => {
                             </p>
                         </div>
 
-
                         <div id="user-upload-input-container">
                             <input
                                 type="text"
@@ -148,15 +147,11 @@ const UserArea = ({ uploadEndpoint }) => {
                 }
 
                 <div id="user-image-grid-section">
-
                     <ImageGrid
                     // searchVal={userSearchVal} //a user db search eredményéből
                     />
-
                 </div>
-
             </div>
-
         </div>
     )
 }

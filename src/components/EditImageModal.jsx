@@ -7,8 +7,7 @@ const EditImageModal = ({ onClose }) => {
             <div id="edit-card-blur">
                 <div id="edit-card-background" >
                     <button id="edit-card-close-button"
-                        onClick={() => onClose(false)}
-                    >
+                        onClick={() => onClose(false)}>
                         <span className="material-symbols-outlined">close</span>
                     </button>
                     <div id="edit-card-content" >
@@ -25,7 +24,7 @@ const EditImageModal = ({ onClose }) => {
                                     name="title"
                                     placeholder="title"
                                     required
-                                    defaultValue="original title from DB"
+                                    defaultValue="title"
                                 // onChange={(event) => setTitleInput(event.target.value)}
                                 />
                                 <input
@@ -34,7 +33,7 @@ const EditImageModal = ({ onClose }) => {
                                     name="description"
                                     placeholder="description"
                                     required
-                                    defaultValue="original description from DB"
+                                    defaultValue="description"
                                 // onChange={(event) => setDescriptionInput(event.target.value)}
                                 />
                             </div>

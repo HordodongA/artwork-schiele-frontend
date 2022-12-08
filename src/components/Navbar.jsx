@@ -17,7 +17,6 @@ const Navbar = ({ onSignup, onLogin, onLoggedIn, onLogout, onSearch, onHome, onC
               onCollection(false)
               onMyGallery(false)
             }}
-
           >Home</a>
         </li>
         <li className="nav-item">
@@ -67,7 +66,11 @@ const Navbar = ({ onSignup, onLogin, onLoggedIn, onLogout, onSearch, onHome, onC
               }}>Log Out</a>
           </li>
         }
-
+        <li className="nav-item">
+          <a href="#">
+            useremail@email.com
+          </a>
+        </li>
         {/* IDEIGLENES SZAKASZ */}
         <li className="nav-item">
           <a href="#top"
@@ -75,6 +78,7 @@ const Navbar = ({ onSignup, onLogin, onLoggedIn, onLogout, onSearch, onHome, onC
               onLogout(!onLoggedIn)
             }}>#switch login#</a>
         </li>
+        {/* IDEIGLENES SZAKASZ VÉGE */}
 
         <li className="nav-item">
           <div className="tooltip">
