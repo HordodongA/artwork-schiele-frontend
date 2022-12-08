@@ -62,22 +62,23 @@ const Navbar = ({ onSignup, onLogin, onLoggedIn, onLogout, onSearch, onHome, onC
                 onLogout(false)
                 onHome(true)
                 onMyGallery(false)
-                // localStorage.removeItem("accessToken")
+                localStorage.removeItem("accessToken")
+                localStorage.removeItem("userEmail")
               }}>Log Out</a>
           </li>
         }
         <li className="nav-item">
-          <a href="#">
-            useremail@email.com
+          <a href="#" id="userEmail">
+            {(!onLoggedIn) || localStorage.getItem("userEmail")}
           </a>
         </li>
         {/* IDEIGLENES SZAKASZ */}
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a href="#top"
             onClick={() => {
               onLogout(!onLoggedIn)
             }}>#switch login#</a>
-        </li>
+        </li> */}
         {/* IDEIGLENES SZAKASZ VÉGE */}
 
         <li className="nav-item">

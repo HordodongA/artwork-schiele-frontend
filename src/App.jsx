@@ -82,6 +82,7 @@ function App() {
     if (response.status === 200) {
       const responseObject = await response.json()
       localStorage.setItem("accessToken", responseObject.accessToken)
+      localStorage.setItem("userEmail", email)
       setIsLoggedIn(true)
       setIsLogin(false)
       setIsHome(false)
